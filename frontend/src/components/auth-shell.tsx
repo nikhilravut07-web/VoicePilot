@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { AudioLines, CalendarCheck2, ShieldCheck, Sparkles } from "lucide-react";
+
+export function AuthShell({ children }: { children: React.ReactNode }) {
+  return <main className="auth-frame"><section className="auth-story"><Link href="/login" className="brand-lockup"><span className="brand-mark"><AudioLines size={20} /></span><span>VoicePilot</span></Link><div className="auth-story-content"><div className="eyebrow"><Sparkles size={14} /> YOUR BUSINESS, ALWAYS ANSWERED</div><h1>Every call handled<br /><span>with care.</span></h1><p>Set up a receptionist that knows your business, keeps appointments organized, and gives your team a clear record of every conversation.</p><div className="auth-feature"><span><ShieldCheck size={18} /></span><div><strong>Your business stays yours</strong><small>Private workspace for your team and customer records.</small></div></div><div className="auth-feature"><span><CalendarCheck2 size={18} /></span><div><strong>Built around your day</strong><small>Business details, hours, services and caller history together.</small></div></div></div><div className="auth-story-footer">AI-assisted reception, made for small business.</div></section><section className="auth-panel"><div className="auth-panel-inner">{children}</div></section></main>;
+}

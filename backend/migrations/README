@@ -1,0 +1,3 @@
+Alembic migration environment. The first revision establishes the SQLAlchemy metadata schema.
+For later revisions, create and review a new migration against the target database instead of
+using create_all to alter an existing database.
